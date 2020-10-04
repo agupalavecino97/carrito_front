@@ -1,0 +1,14 @@
+.page-header{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background:#445bd8;    
+
+}
+.page-header h1{
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    padding: 28px 8px;
+    font-size: 20px;
+}

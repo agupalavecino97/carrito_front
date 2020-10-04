@@ -12,18 +12,26 @@ import { AppRoutingModule } from './app-routing.module';
 
 // components
 import { AppComponent } from './app.component';
+import { ProductoComponent } from './components/producto/producto.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 // import { UsuarioComponent } from './components/usuario/usuario.component';
 
 
 // material
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatTableModule} from '@angular/material/table';
 
 //ng-bootstrap
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
     //aqui van las declaracion de los componetes
-    // UsuarioComponent,
+    ProductoComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +43,11 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     routing,
     //material
-
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule,
+    MatTableModule,
     //ng-bootstrap
 
   ],
